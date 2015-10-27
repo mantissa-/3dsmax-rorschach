@@ -1,6 +1,5 @@
 -- Rorschach v2.5 - 22/12/13
 -- Developed by Midge Sinnaeve
--- midge@daze.tv
 -- www.themantissa.net
 -- Licensed under GPL v2
 
