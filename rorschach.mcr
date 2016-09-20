@@ -83,6 +83,8 @@ macroScript Rorschach
 		
 		-- GLOBAL FUNCTIONS & VARIABLES --
 		
+		global p, q, rad1, rad2, ecc, lmp, lmph, pn, selector
+		
 			-- DISTORT FUNCTIONS --
 	
 				fn addDisplace obj =
@@ -437,15 +439,15 @@ macroScript Rorschach
 			
 			fn creator =
 			(
-				global p = random 1 5
-				global q = random 1 5
-				global rad1 = random 25 75
-				global rad2 = rad1 / random 2.0 4.0
-				global ecc = random 0.9 1.1
-				global lmp = random 0 25
-				global lmph = random -0.5 0.5
+				p = random 1 5
+				q = random 1 5
+				rad1 = random 25 75
+				rad2 = rad1 / random 2.0 4.0
+				ecc = random 0.9 1.1
+				lmp = random 0 25
+				lmph = random -0.5 0.5
 				
-				global pn = random 0 1
+				pn = random 0 1
 				if pn == 1 then
 					(
 						sign = "+"
@@ -455,7 +457,7 @@ macroScript Rorschach
 						sign = "-"
 					)
 				
-				global selector = ddl_modeltype.selection
+				selector = ddl_modeltype.selection
 				
 					
 				if $ != undefined then
